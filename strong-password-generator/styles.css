@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Stack title above columns */
+    justify-content: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit the max width */
+    padding: 20px; /* Add padding */
+    gap: 80px;
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center align the title */
+}
+
+.columns {
+    display: flex; /* Use a flex container for left and right columns */
+    justify-content: center; /* Center both columns */
+    width: 100%; /* Full width for columns */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between checkboxes */
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items in the right column */
+    gap: 10px; /* Add space between elements */
+    row-gap: 20px;
+}
+
+.password-container {
+    display: flex;
+    align-items: center; /* Center the input and button vertically */
+}
+
+input[type="text"] {
+    width: 300px; /* Adjust width as needed */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* Center the text inside the field */
+    margin-right: 10px; /* Space between input and button */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: mediumspringgreen;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: mediumaquamarine;
+}
+
+#lengthValue {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/* Optional: Style for the slider */
+input[type="range"] {
+    width: 100%; /* Make slider fill the width of its container */
+    height: 8px; /* Height of the slider track */
+    border-radius: 4px; /* Rounded edges */
+    background: #ddd; /* Track color */
+    outline: none; /* Remove outline */
+}
+
+/* Slider track color */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: lightgray; /* Change this to your desired track color */
+    border-radius: 4px; /* Keep rounded edges */
+}
+
+/* Slider thumb color */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+    width: 20px; /* Width of the thumb */
+    height: 20px; /* Height of the thumb */
+    border-radius: 50%; /* Round thumb */
+    background: mediumseagreen; /* Change this to your desired thumb color */
+    cursor: pointer; /* Pointer cursor */
+}
+

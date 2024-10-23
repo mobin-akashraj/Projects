@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="h1">
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="lowercase" checked>abc</label>
+                <label><input type="checkbox" id="uppercase" checked>ABC</label>
+                <label><input type="checkbox" id="numbers" checked>123</label>
+                <label><input type="checkbox" id="symbols" checked>@$#</label>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div style="display: flex; align-items: center;"> <!-- Flex container for password and button -->
+                <input type="text" id="password" placeholder="Strong Password" readonly>
+                <button id="copyButton" onclick="copyPassword()">Copy</button>
+            </div>
+            <button onclick="generatePassword()">Generate</button>
+            <input type="range" id="lengthSlider" min="8" max="128" value="69" oninput="updateLengthValue()">
+            <span id="lengthValue">69</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
