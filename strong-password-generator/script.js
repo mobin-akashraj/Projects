@@ -1,6 +1,6 @@
 // Function to generate a random password
 function generatePassword() {
-    const length = document.getElementById('lengthSlider').value; // Get the length from the slider
+    const length = document.getElementById('lengthSlider').value;
     const includeLowercase = document.getElementById('lowercase').checked;
     const includeUppercase = document.getElementById('uppercase').checked;
     const includeNumbers = document.getElementById('numbers').checked;
@@ -24,19 +24,19 @@ function generatePassword() {
     }
 
     const passwordInput = document.getElementById('password');
-    passwordInput.value = password; // Set the generated password in the input field
+    passwordInput.value = password;
 }
 
 // Function to update the displayed length value
 function updateLengthValue() {
     const lengthSlider = document.getElementById('lengthSlider');
     const lengthValue = document.getElementById('lengthValue');
-    lengthValue.textContent = lengthSlider.value; // Update the displayed value
+    lengthValue.textContent = lengthSlider.value;
 }
 
 // Function to copy the password to clipboard
 function copyPassword() {
     const passwordInput = document.getElementById('password');
     passwordInput.select();
-    document.execCommand('copy'); // Copy the password
+    document.execCommand('copy');
 }
