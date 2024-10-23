@@ -12,57 +12,57 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row; /* Stack title above columns */
-    justify-content: center; /* Center items vertically */
-    width: 100%; /* Full width */
-    max-width: 800px; /* Limit the max width */
-    padding: 20px; /* Add padding */
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
     gap: 80px;
 }
 
 h1 {
-    margin-bottom: 20px; /* Space below the title */
-    text-align: center; /* Center align the title */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .columns {
-    display: flex; /* Use a flex container for left and right columns */
-    justify-content: center; /* Center both columns */
-    width: 100%; /* Full width for columns */
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .left-column {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center items vertically */
+    justify-content: center;
 }
 
 .checkbox-group {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between checkboxes */
+    gap: 20px;
 }
 
 .right-column {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items in the right column */
-    gap: 10px; /* Add space between elements */
+    align-items: center;
+    gap: 10px;
     row-gap: 20px;
 }
 
 .password-container {
     display: flex;
-    align-items: center; /* Center the input and button vertically */
+    align-items: center;
 }
 
 input[type="text"] {
-    width: 300px; /* Adjust width as needed */
+    width: 300px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    text-align: center; /* Center the text inside the field */
-    margin-right: 10px; /* Space between input and button */
+    text-align: center;
+    margin-right: 10px;
 }
 
 button {
@@ -72,7 +72,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -86,27 +86,27 @@ button:hover {
 
 /* Optional: Style for the slider */
 input[type="range"] {
-    width: 100%; /* Make slider fill the width of its container */
-    height: 8px; /* Height of the slider track */
-    border-radius: 4px; /* Rounded edges */
-    background: #ddd; /* Track color */
-    outline: none; /* Remove outline */
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: #ddd;
+    outline: none;
 }
 
 /* Slider track color */
 input[type="range"]::-webkit-slider-runnable-track {
-    background: lightgray; /* Change this to your desired track color */
-    border-radius: 4px; /* Keep rounded edges */
+    background: lightgray;
+    border-radius: 4px;
 }
 
 /* Slider thumb color */
 input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remove default styling */
-    appearance: none; /* Remove default styling */
-    width: 20px; /* Width of the thumb */
-    height: 20px; /* Height of the thumb */
-    border-radius: 50%; /* Round thumb */
-    background: mediumseagreen; /* Change this to your desired thumb color */
-    cursor: pointer; /* Pointer cursor */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: mediumseagreen;
+    cursor: pointer;
 }
 
