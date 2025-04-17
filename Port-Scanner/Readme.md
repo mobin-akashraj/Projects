@@ -7,5 +7,5 @@ Python 3.x
 python portscanner.py <target>
 
 ## Example :
-python portscanner.py 8.8.8.8
-python portscanner.py dns.google.com
+- python portscanner.py 8.8.8.8
+- python portscanner.py dns.google.com
